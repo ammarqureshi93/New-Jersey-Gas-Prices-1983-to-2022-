@@ -1,0 +1,67 @@
+
+
+/*Finding the gas prices in January from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Jan%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in Feburary from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Feb%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in March from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Mar%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in April from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Apr%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in May from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%May%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in June from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Jun%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in July from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Jul%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in August from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Aug%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in September from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Sep%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in October from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Oct%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in November from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Nov%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Finding the gas prices in December from lowest to highest*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+WHERE Date LIKE '%Dec%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Showing the gas prices from lowest to highest from 1983 to 2022*/
+SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
+ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
+
+/*Lowest gas price*/
+SELECT MIN(New_Jersey_Total_Gas_Price_Dollars_per_Gallon) AS LowestGasPrice FROM Prices;
+
+/*Month and year of lowest gas price*/
+Select Date FROM Prices
+WHERE New_Jersey_Total_Gas_Price_Dollars_per_Gallon = '0.451';
+
+/*Highest gas price*/
+SELECT MAX(New_Jersey_Total_Gas_Price_Dollars_per_Gallon) AS HighestGasPrice FROM Prices;
+
+/*Month and year of highest gas price*/
+SELECT DATE FROM PRICES
+WHERE New_Jersey_Total_Gas_Price_Dollars_per_Gallon = '3.402';
