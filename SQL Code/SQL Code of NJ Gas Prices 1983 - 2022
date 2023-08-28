@@ -63,5 +63,5 @@ WHERE New_Jersey_Total_Gas_Price_Dollars_per_Gallon = '0.451';
 SELECT MAX(New_Jersey_Total_Gas_Price_Dollars_per_Gallon) AS HighestGasPrice FROM Prices;
 
 /*Month and year of highest gas price*/
-SELECT DATE FROM PRICES
+SELECT Date FROM PRICES
 WHERE New_Jersey_Total_Gas_Price_Dollars_per_Gallon = '3.402';
