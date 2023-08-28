@@ -1,5 +1,3 @@
-
-
 /*Finding the gas prices in January from lowest to highest*/
 SELECT Date, New_Jersey_Total_Gas_Price_Dollars_per_Gallon FROM Prices
 WHERE Date LIKE '%Jan%' ORDER BY New_Jersey_Total_Gas_Price_Dollars_per_Gallon ASC;
